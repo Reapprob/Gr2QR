@@ -1,0 +1,65 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .hero h1 {
+    color: #64b5f6;
+}
+
+body.dark-mode .hero p {
+    color: #ddd;
+}
+
+body.dark-mode footer {
+    color: #aaa;
+}
+
+body.dark-mode #theme-button {
+    background-color: #333;
+}
+#theme-button {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode #theme-button {
+    background-color: white;
+    color: black;
+}
+/* Troubleshooting Guide part when expand */
+body.dark-mode .learning-group {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .learning-list {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .category {
+    border-color: #444;
+}
+
+body.dark-mode .category summary {
+    background-color: #2a2a2a;
+    color: #90caf9;
+    border-color: #444;
+}
+
+body.dark-mode .learning-list a {
+    background-color: #2a2a2a;
+    color: #90caf9;
+    border-color: #444;
+}
+
+body.dark-mode .lessons h2 {
+    color: #64b5f6;
+}
+
+body.dark-mode .lessons p {
+    color: #ddd;
+}
