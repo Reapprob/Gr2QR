@@ -92,3 +92,17 @@ footer,
 #theme-button:hover {
     transform: scale(1.1);
 }
+/*for offline indicator*/
+#offline-indicator {
+    display: none;
+    background-color: #c62828;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#offline-indicator.show {
+    display: block;
+}
