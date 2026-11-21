@@ -1,4 +1,4 @@
-const CACHE_NAME = "css-guide-v2";
+const CACHE_NAME = "css-guide-v3";
 
 const FILES_TO_CACHE = [
     "./",
@@ -7,7 +7,8 @@ const FILES_TO_CACHE = [
     "./styleofweb.css",
     "./darkandlighttheme.css",
     "./script.js",
-    "./darkandlighttheme.js"
+    "./darkandlighttheme.js",
+    "./offlineindicator.js"
 ];
 
 // Install and save important files
