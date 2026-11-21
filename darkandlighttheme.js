@@ -23,3 +23,11 @@ themeButton.addEventListener("click", function() {
         localStorage.setItem("theme", "light");
     }
 });
+// Register offline support
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./serviceworker.js")
+            .then(() => console.log("Offline support enabled"))
+            .catch(error => console.log("Service Worker error:", error));
+    });
+}

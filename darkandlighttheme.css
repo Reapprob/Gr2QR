@@ -31,7 +31,7 @@ body.dark-mode #theme-button {
     background-color: white;
     color: black;
 }
-/* Troubleshooting Guide part when expand */
+/* Troubleshooting Guide part when expand to make it dark also*/
 body.dark-mode .learning-group {
     background-color: #1e1e1e;
 }
@@ -62,4 +62,33 @@ body.dark-mode .lessons h2 {
 
 body.dark-mode .lessons p {
     color: #ddd;
+}
+/*for the smooth transision*/
+/* Smooth theme animation */
+body,
+header,
+footer,
+.learning-group,
+.learning-list,
+.learning-list a,
+.category,
+.category summary,
+.hero,
+.lessons {
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        border-color 0.5s ease;
+}
+
+/* Smooth theme button */
+#theme-button {
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        transform 0.3s ease;
+}
+
+#theme-button:hover {
+    transform: scale(1.1);
 }
