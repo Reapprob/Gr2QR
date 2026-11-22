@@ -23,4 +23,4 @@ window.addEventListener("online", updateConnectionStatus);
 window.addEventListener("offline", updateConnectionStatus);
 
 updateConnectionStatus();
-setInterval(updateConnectionStatus, 5000);
+setInterval(updateConnectionStatus, 1000);
