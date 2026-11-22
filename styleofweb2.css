@@ -1,0 +1,138 @@
+/* for the problem pages */
+
+.problem-page {
+    flex: 1;
+    width: 90%;
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+.back-button {
+    display: inline-block;
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.problem-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.problem-heading h1 {
+    margin: 15px 0;
+    font-size: 36px;
+}
+
+.problem-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.problem-category {
+    display: inline-block;
+    background-color: #e3edfb;
+    color: #1565c0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.problem-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.problem-card h2 {
+    color: #1565c0;
+    margin-top: 0;
+}
+
+.problem-card p,
+.problem-card li {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.problem-card ul {
+    padding-left: 25px;
+}
+
+.procedure-step {
+    background-color: #f4f7fb;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #1565c0;
+}
+
+.procedure-step h3 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+.procedure-step p {
+    margin-bottom: 0;
+}
+
+/* Dark Mode */
+
+body.dark-mode .problem-card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode .procedure-step {
+    background-color: #292929;
+}
+
+body.dark-mode .problem-heading h1,
+body.dark-mode .problem-card h2,
+body.dark-mode .procedure-step h3 {
+    color: #64b5f6;
+}
+
+body.dark-mode .back-button {
+    color: #64b5f6;
+}
+
+body.dark-mode .problem-category {
+    background-color: #26384d;
+    color: #90caf9;
+}
+
+/* Mobile Support */
+
+@media (max-width: 600px) {
+    .problem-page {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .problem-heading h1 {
+        font-size: 27px;
+    }
+
+    .problem-card {
+        padding: 18px;
+    }
+
+    .problem-card h2 {
+        font-size: 20px;
+    }
+
+    .problem-card p,
+    .problem-card li {
+        font-size: 14px;
+    }
+}
