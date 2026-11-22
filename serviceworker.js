@@ -1,17 +1,20 @@
-const CACHE_NAME = "css-guide-v3";
+//js for offline support of the website
+const CACHE_NAME = "css-guide-v4";
 
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
     "./T.S. Guide page.html",
     "./styleofweb.css",
+    "./styleofweb2.css",
     "./darkandlighttheme.css",
     "./script.js",
     "./darkandlighttheme.js",
-    "./offlineindicator.js"
+    "./offlineindicator.js",
+    "./xHproblem1.html"
 ];
 
-// Install and save important files
+// Install and save important files of the web
 self.addEventListener("install", event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
@@ -20,7 +23,7 @@ self.addEventListener("install", event => {
     );
 });
 
-// Remove old cache versions
+// Remove old cache versions when online again
 self.addEventListener("activate", event => {
     event.waitUntil(
         caches.keys().then(keys => {
